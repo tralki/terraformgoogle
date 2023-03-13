@@ -45,6 +45,7 @@ resource "google_compute_disk" "default" {
 resource "google_compute_firewall" "default" {
   name    = var.firewallname 
   network = var.network
+  source_tags = ["web"]
 
   allow {
     protocol = "tcp"
