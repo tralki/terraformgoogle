@@ -38,7 +38,7 @@ resource "google_compute_instance" "default1" {
 
 resource "google_compute_disk" "default" {
   name         = var.namedisk2
-  size         = var.size2
+  size         = var.sizedisk2
   zone         = var.zone
 }
 
